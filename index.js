@@ -7,10 +7,18 @@ app.engine('jsx', require('express-react-views').createEngine())
 
 app.use('/places', require('./controllers/places'))
 
+
+// GET /home
 app.get('/', (req, res) => {
     res.render('home')
 })
 
+// GET /places
+app.get('/', (req, res) => {
+  res.render('places/index')
+})
+
+// Error 404
 app.get('*', (req, res) => {
     res.render('error404')
 })
