@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "center-align": "^1.0.1",
     "dotenv": "^11.0.0",
     "express": "^4.17.2",
     "express-react-views": "^0.11.0",
