@@ -22,10 +22,9 @@ router.get('/new', (req, res) => {
   res.render('places/new')
 })
 
-// router.post('/', (req,res) => {
-//   if (!req.body.image) {
-//     req.body.image = 'URL'
-//   }
-// })
+router.post('/', (req, res) => {
+  console.log(req.body)
+  res.send('POST /places')
+})
 
 module.exports = router
