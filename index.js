@@ -1,6 +1,9 @@
 require('dotenv').config()
 const express = require('express')
-const methodOverride = require('method-override')
+const { get } = require('express/lib/response');
+const res = require('express/lib/response');
+const methodOverride = require('method-override');
+
 const app = express()
 
 // EXPRESS SETTINGS
