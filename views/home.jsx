@@ -1,6 +1,7 @@
 const React = require('react')
 const Def = require('./default')
 
+/* HOME PAGE */
 function home() {
     return (
         <Def>
