@@ -8,32 +8,34 @@ function new_form () {
                 <h1>Add a New Place</h1>
                 <form method="POST" action="/places">
                     <div className="row">
-                        <div className="form-group col-sm-6">
+                        <div className="col-md-6">
                             <label>Place Name</label>
                             <input className="form-control" id="name" name="name" required/>
                         </div>
-                        <div className="form-group col-sm-6">
+                        <div className="col-md-6">
                             <label>Place Picture</label>
                             <input className="form-control" id="url" name="pic" />
                         </div>
                     </div>
                     <div className="row">
-                        <div className="form-group col-sm-6">
+                        <div className="col-md-6">
                             <label>City</label>
                             <input className="form-control" id="city" name="city" />
                         </div>
-                        <div className="form-group col-sm-6">
+                        <div className="col-md-6">
                             <label>State</label>
                             <input className="form-control" id="state" name="state" />
                         </div>
                     </div>
-                    <div className="form-group">
-                        <label>Cuisines</label>
-                        <input className="form-control" id="cuisines" name="cuisines" required />
-                    </div>
-                    <div className="form-group">
-                        <label for="founded">Founded Year</label>
-                        <input className="form-control" id="founded" name="founded" />
+                    <div className="row">
+                        <div className="col-md-6">
+                            <label>Cuisines</label>
+                            <input className="form-control" id="cuisines" name="cuisines" required />
+                        </div>
+                        <div className="col-md-6">
+                            <label for="founded">Founded Year</label>
+                            <input className="form-control" id="founded" name="founded" />
+                        </div>
                     </div>
                     <input className="btn-btn-primary" type="submit" value="Add REST-Rant"  />
                 </form>
